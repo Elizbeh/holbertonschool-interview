@@ -3,6 +3,7 @@
 Main file for testing
 """
 
+
 minOperations = __import__('0-minoperations').minOperations
 
 n = 4
