@@ -3,6 +3,7 @@
 Minimum operation
 """
 
+
 def minOperations(n):
     if n == 1:
         return 0
@@ -16,6 +17,5 @@ def minOperations(n):
         else:
             operations += 1
             h += h - n % h
-            
-    return operations
 
+    return operations
