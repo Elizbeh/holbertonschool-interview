@@ -5,9 +5,9 @@
  * @grid1: first sandpile
  * @grid2: second sandpile
  */
- 
 
-void sandpiles_sum(int grid1[3][3], int grid2[3][3])
+
+void sandpiles_sum(int grid1[3][3], int grid2[3][3]
 {
 	int i = 0, j = 0;
 	int wistle[3][3] = {
@@ -28,7 +28,7 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 		/* print unstable grid before toppling*/
 		printf("=\n");
 		print_grid(grid1);
-		
+
 		for (i = 0; i < 3; i++)
 		{
 			for (j = 0; j < 3; j++)
@@ -44,7 +44,8 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 /**
  *
  *
- **/ 
+*/ 
+
 
 int grid1_unstable(int grid1[3][3], int wistle[3][3])
 {
