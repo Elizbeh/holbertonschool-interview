@@ -38,4 +38,8 @@ int main(void)
     binary_tree_print(root);
     _binary_tree_delete(root);
     return (0);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 53212daf2116ea9801a91c892485fdfc22c2d296

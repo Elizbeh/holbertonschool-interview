@@ -66,7 +66,11 @@ int main(void)
         {0, 0, 0},
         {0, 0, 0},
         {0, 0, 0}
+<<<<<<< HEAD
     };
+=======
+    };    
+>>>>>>> 8df6c2a15fcab05b00b1abe097401dbab7003f6c
     int grid2[3][3] = {
         {3, 3, 3},
         {3, 3, 3},
@@ -81,4 +85,8 @@ int main(void)
     print_grid(grid1);
 
     return (EXIT_SUCCESS);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8df6c2a15fcab05b00b1abe097401dbab7003f6c
