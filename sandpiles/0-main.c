@@ -81,4 +81,8 @@ int main(void)
     print_grid(grid1);
 
     return (EXIT_SUCCESS);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8df6c2a15fcab05b00b1abe097401dbab7003f6c
