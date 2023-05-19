@@ -8,21 +8,13 @@
  */
 int is_palindrome(unsigned long n)
 {
-    char str[20];  
-    int length = 0;
-    int i = 0;
+    unsigned long reverse = 0;
+    unsigned long temp = n;
 
-    sprintf(str, "%lu", n);
-
-    while (str[length] != '\0')
-        length++;
-
-    while (i < length / 2)
+    while(temp > 0)
     {
-        if (str[i] != str[length - i - 1])
-            return 0;
-        i++;
+        reverse = reverse * 10 + temp % 10;
+        temp /= 10;
     }
-
-    return 1;
+return (n == reverse);
 }
