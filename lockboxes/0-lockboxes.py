@@ -19,7 +19,7 @@ def canUnlockAll(boxes):
         # Take a key from the list of keys to check
         key = keys_to_check.pop()
 
-        if key not in visited:
+        if key < total_boxes and key not in visited:
             # Mark the box as visited
             visited.add(key)
 
