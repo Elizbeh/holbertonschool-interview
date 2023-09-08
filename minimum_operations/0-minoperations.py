@@ -1,20 +1,27 @@
 #!/usr/bin/python3
 """
-Minimum operation
+Minimum Operations
 """
 
 
 def minOperations(n):
     if n <= 1:
         return 0
+    
+    operations = 0
+    divisor = 2
+    
+    while n > 1:
+        while n % divisor == 0:
+            n //= divisor
+            operations += divisor
+        
+        divisor += 1
+    
+    return operations
 
-    dp = [0] * (n + 1)
+# Example usage:
+n = 19170307
+result = minOperations(n)
+print(f"Number of operations to get {n} 'H' characters: {result}")
 
-    for i in range(2, n + 1):
-        dp[i] = i  # Start with the maximum possible value
-
-        for j in range(2, i // 2 + 1):
-            if i % j == 0:
-                dp[i] = min(dp[i], dp[j] + i // j)
-
-    return dp[n]
