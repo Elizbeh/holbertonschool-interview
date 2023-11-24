@@ -33,6 +33,7 @@ binary_tree_t *create_binary_node(binary_tree_t *parent, int value)
  */
 avl_t *create_avl_node(int *array, int start, int end, avl_t *parent)
 {
+    int mid;
     if (start > end)
         return (NULL);
 
